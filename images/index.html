@@ -10,10 +10,12 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar fixed-top navbar-expand-lg  bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="logo.png" alt="" class="d-inline-block align-text-top"
@@ -35,15 +37,15 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shoes</a>
+                <a class="nav-link" href="#shoes">Shoes</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Backpack</a>
+                <a class="nav-link" href="#backpack">Backpack</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Subscribe</a>
+                <a class="nav-link" href="#subscribe">Subscribe</a>
               </li>
 
               <!-- <li class="nav-item">
@@ -155,7 +157,7 @@
         <!-- categories start ------use gutters------------------ -->
         <section>
             <div class="container text-center my-5">
-                <div class="row g-2">
+                <div class="row g-2 categories">
                     <!-- single category -->
                   <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="p-3 border  bg-warning d-flex align-items-center rounded-3">
@@ -186,7 +188,7 @@
 
         <!-- shoes section start...  
         use card of bootstrap grid card -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row g-4">
                 <div class="col">
@@ -231,7 +233,7 @@
 
         <!-- backback section start 
         oporer section copy kore modify krte hbe cz prai same dekhte-->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row g-4">
                 <div class="col">
@@ -277,7 +279,28 @@
         </section>
         <!-- backback section end -->
 
+        <!-- subscribe start....  go form overview copy code and modify by clear which is no need-->
+        <section style="height: 300px;" class="container rounded-3 d-flex justify-content-center align-items-center bg-info" id="subscribe">
+           <div> <h2> LET'S STAY IN TOUCH</h2>
+            <p>Get updates on sales, specials and more</p>
+            <form>
+                <div class="mb-1">
+                 
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+              
+               
+                <button type="submit" class="btn btn-warning">Submit</button>
+              </form></div>
+
+        </section>
+        <!-- subscribe end -->
+
     </main>
+    <footer class="mt-5 text-center">
+        <p><small>2022.panda commerce.All rights reserved.sofia,bulgeria.</small></p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
